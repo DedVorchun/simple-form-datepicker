@@ -1,10 +1,8 @@
 = simple-form-datepicker
 
-* {Homepage}[https://rubygems.org/gems/simple-form-datepicker]
-* {Documentation}[http://rubydoc.info/gems/simple-form-datepicker/frames]
-* {Email}[mailto:paul at tymate.com]
+* {Homepage}[https://github.com/DedVorchun/devise_ldap_authenticatable]
 
-{<img src="https://badge.fury.io/rb/simple-form-datepicker.png" alt="Gem Version" />}[http://badge.fury.io/rb/simple-form-datepicker]
+
 
 == Description
 
@@ -15,44 +13,11 @@ Provides an easy to use date picker for SimpleForm.
 - Easy to use.
 - Localizable with I18n and I18n-js.
 
-== Examples
+=== Using in your simple forms
 
-  require 'simple-form-datepicker'
-
-=== In your simple forms
-
-  = f.input :date_attribute, :as :datepicker
+  <%= f.input :date, :as => :datepicker %>
   
-=== In app/assets/javascripts/application.js
 
-  //= require jquery.ui.all
-
-or
-
-  //= require jquery.ui.datepicker
-
-Also load localisations for JQueryUI's datepicker:
-
- //= require jquery.ui.datepicker-en
- //= require jquery.ui.datepicker-es
- //= require jquery.ui.datepicker-fr
-
-Initialize JQueryUI's datepicker:
-
-  $("input.datepicker").each(function(input) {
-    $(this).datepicker({
-      dateFormat: "yy-mm-dd",
-      altField: $(this).next()
-    })
-
-    // If you use i18n-js you can set the locale like that
-    $(this).datepicker("option", $.datepicker.regional[I18n.currentLocale()]);
-  })
-  
-  
-=== In app/assets/stylesheets/application.css
-
-  *= require jquery.ui.datepicker
 
 == Requirements
 
@@ -61,15 +26,13 @@ Initialize JQueryUI's datepicker:
 
 == TODO
 
-- How to use with i18n-js.
-
 == Install
 
+  $ gem install simple-form-datepicker, :git => 'git://github.com/DedVorchun/simple-form-datepicker.git'
 
-  $ gem install simple-form-datepicker
 
 == Copyright
 
-Copyright (c) 2013 Paul d'Hubert
+Copyright (c) 2016 Ivan Martynenko
 
 See LICENSE.txt for details.

@@ -3,14 +3,14 @@
 require File.expand_path('../lib/simple-form-datepicker/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name          = "simple-form-datepicker-reloaded"
+  gem.name          = "simple-form-datepicker"
   gem.version       = SimpleFormDatepicker::VERSION
-  gem.summary       = %q{Datepicker inputs for SimpleForm, updated for 3.1.0.}
-  gem.description   = %q{Datepicker inputs for SimpleForm, updated for 3.1.0.}
+  gem.summary       = %q{Datepicker inputs for SimpleForm}
+  gem.description   = %q{Datepicker inputs for SimpleForm}
   gem.license       = "MIT"
-  gem.authors       = ["Paul d'Hubert"]
-  gem.email         = "paul@tymate.com"
-  gem.homepage      = "https://github.com/JasonBarnabe/simple-form-datepicker"
+  gem.authors       = ["Ivan Martynenko"]
+  gem.email         = "sieger1x2@gmail.com"
+  gem.homepage      = "https://github.com/DedVorchun/devise_ldap_authenticatable"
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
